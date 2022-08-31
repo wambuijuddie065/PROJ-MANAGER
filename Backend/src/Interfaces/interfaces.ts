@@ -1,0 +1,17 @@
+
+export interface User{
+    id:string
+    email:string
+    password:string
+}
+
+
+
+export interface Data{
+    user_id:string
+    email:string
+    name:string
+    role:string
+    iat:number
+    exp:number
+}

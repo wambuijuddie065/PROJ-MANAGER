@@ -1,0 +1,6 @@
+CREATE PROCEDURE deleteUser(@email VARCHAR)
+AS
+BEGIN
+DELETE FROM UsersTable
+WHERE email=@email
+END

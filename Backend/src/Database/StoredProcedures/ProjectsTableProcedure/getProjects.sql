@@ -1,0 +1,5 @@
+CREATE PROCEDURE getProjects
+AS
+BEGIN
+SELECT * FROM ProjectsTable
+END

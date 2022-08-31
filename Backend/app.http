@@ -1,0 +1,90 @@
+
+POST http://localhost:5000/users/register
+Content-Type: application/json
+
+
+{
+    "name":"Jj",
+    "email":"jj@gmail.com",
+    "password":"12345678"
+}
+
+###
+
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+
+{
+    
+    "email":"user1@gmail.com",
+    "password":"12345678"
+}
+
+
+###
+
+GET http://localhost:5000/users/check
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMzlkODBlYTQtODA4MS00MjRkLWFmMzItOTY1MjdmZjhlMDk0IiwibmFtZSI6InVzZXIxIiwiZW1haWwiOiJ1c2VyMUBnbWFpbC5jb20iLCJyb2xlIjoiVXNlciIsImlzYXNzaWduZWQiOiIxIiwicHJvamVjdF9pZCI6IjAiLCJpc3NlbnQiOiIwIiwiaWF0IjoxNjYwNjQzNDYzLCJleHAiOjE2NjA2NDcwNjN9.N1_5YIPNfIzjeYKqflAf4BaQv_6cmZ1spw7AplNfX_M
+
+###
+
+
+
+POST http://localhost:5000/projects/add
+Content-Type: application/json
+
+
+{
+    "project_name":"SQL",
+    "project_description":"JOINS",
+    "due_date":"2022-08-21",
+    "email":"user1@gmail.com"
+}
+
+###
+
+
+
+
+GET http://localhost:5000/projects
+
+###
+
+GET http://localhost:5000/projects/9f9d811e-dd92-4c5b-a93f-b8ca6bfa3786
+###
+
+PUT http://localhost:5000/projects/f06debca-ffee-472b-b56f-3cef99ec5313
+Content-Type: application/json
+
+{
+    
+    "project_name":"sql2",
+    "project_description":"updated sql",
+    "due_date":"2022-08-21",
+    "is_complete":"1",
+    "isassigned":"1",
+    "user_id":"1"
+
+}
+
+###
+
+DELETE http://localhost:5000/projects/70e052fe-3f91-4648-a606-9127a7b9117d
+
+###
+
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/cdd76976-e496-4b89-9666-8d7313b3163e
+
+
+###
+POST  http://localhost:5000/projects/assignProject
+Content-Type: application/json
+
+{
+    "project_name":"SQL",
+    "user_id":"a87d3383-25fa-43f9-8200-646b3ac0ea68"
+}
